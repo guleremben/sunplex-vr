@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUNPLEX | VR Stüdyo — Araç Seçimi</title>
+  <style>
+    :root { --navy-1:#0a1224; --navy-2:#13203a; --navy-3:#1c2f56; --chrome-1:#f4f6f9; --chrome-2:#c9d0da; --chrome-3:#8e99a8; --line:rgba(201,208,218,0.18); }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { min-height:100%; background: radial-gradient(120% 90% at 50% 0%, var(--navy-3) 0%, var(--navy-1) 65%); color:var(--chrome-1); font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    header { display:flex; align-items:baseline; justify-content:space-between; padding:26px 34px; }
+    .wordmark .sun { font-size:26px; font-weight:800; letter-spacing:2px; color:var(--chrome-1); }
+    .wordmark .plex { font-size:26px; font-weight:800; letter-spacing:2px; background:linear-gradient(180deg,#fff 0%,#9aa5b4 45%,#e8ecf1 55%,#6f7a89 100%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    header .tag { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--chrome-3); }
+    main { max-width:1180px; margin:0 auto; padding:10px 34px 60px; }
+    h1 { font-size:30px; font-weight:700; letter-spacing:0.5px; margin:24px 0 6px; }
+    p.lead { color:var(--chrome-2); font-size:15px; line-height:1.6; max-width:640px; margin-bottom:34px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:22px; }
+    a.card { display:block; text-decoration:none; color:inherit; border:1px solid var(--line); border-radius:18px; overflow:hidden; background:rgba(10,18,36,0.6); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    a.card:hover, a.card:focus-visible { transform:translateY(-3px); border-color:rgba(201,208,218,0.55); box-shadow:0 18px 50px rgba(0,0,0,0.45); outline:none; }
+    a.card img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--navy-2); }
+    .card-body { padding:16px 18px 18px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .card-body .name { font-size:18px; font-weight:700; }
+    .card-body .sub { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--chrome-3); margin-top:4px; }
+    .card-body .go { flex:none; font-size:12px; font-weight:700; letter-spacing:1px; padding:10px 14px; border-radius:10px; color:var(--navy-1); background:linear-gradient(180deg,#fff 0%,var(--chrome-2) 100%); }
+    .note { margin-top:40px; padding:16px 18px; border:1px solid var(--line); border-radius:12px; color:var(--chrome-2); font-size:13px; line-height:1.6; max-width:760px; }
+    footer { padding:20px 34px 30px; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--chrome-3); }
+    @media (max-width:600px){ header, main, footer { padding-left:18px; padding-right:18px; } h1 { font-size:24px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wordmark"><span class="sun">SUN</span><span class="plex">PLEX</span></div>
+    <div class="tag">VR Stüdyo · Araç Seçimi</div>
+  </header>
+  <main>
+    <h1>Hangi aracı incelemek istersiniz?</h1>
+    <p class="lead">Araç lacivert stüdyonun merkezinde, gerçek fotoğraftan. Seçtikten sonra sağ üstteki "VR'A GİR" düğmesiyle gözlükte açın; cam rüzgarlıklarına 60 cm'e kadar yaklaşabilirsiniz.</p>
+    <div class="grid">
+      <a class="card" href="../egea/">
+        <img src="../assets/egea/thumb.webp" alt="Fiat Egea, sol yan" />
+        <div class="card-body"><div><div class="name">Fiat Egea</div><div class="sub">Sol yan profil · Cam rüzgarlığı</div></div><span class="go">İNCELE</span></div>
+      </a>
+      <a class="card" href="../togg/">
+        <img src="../assets/togg/thumb.webp" alt="TOGG T10X, sağ yan" />
+        <div class="card-body"><div><div class="name">TOGG T10X</div><div class="sub">Yolcu tarafı yan profil · Cam rüzgarlığı</div></div><span class="go">İNCELE</span></div>
+      </a>
+    </div>
+    <div class="note">Meta Quest 3'te: Quest Browser'da bu adresi açın, aracı seçin, sayfa yüklenince "VR'A GİR" düğmesine bakıp tetiğe basın. Bilgisayarda fareyle sürükleyerek bakın, W A S D ile yürüyün.</div>
+  </main>
+  <footer>SUNPLEX Cam Rüzgarlığı · Sanal Showroom</footer>
+</body>
+</html>
