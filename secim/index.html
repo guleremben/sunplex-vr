@@ -16,6 +16,14 @@
       background:linear-gradient(90deg, rgba(7,10,16,0.93) 0%, rgba(7,10,16,0.80) 34%, rgba(7,10,16,0.24) 60%, rgba(7,10,16,0.42) 100%),
         linear-gradient(180deg, rgba(7,10,16,0.55) 0%, rgba(7,10,16,0) 34%, rgba(7,10,16,0) 72%, rgba(7,10,16,0.65) 100%);}
     .kat{position:fixed;inset:0;display:flex;flex-direction:column;padding:26px 40px 30px}
+    /* duvara gomulu dev urun silueti: dekoratif, arka planda kalir */
+    .duvarurun{position:fixed;left:19%;top:10%;width:52%;z-index:0;pointer-events:none;
+      display:flex;flex-direction:column;gap:7vh;opacity:0.22}
+    .duvarurun img{width:100%;height:auto;display:block;
+      filter:brightness(0) invert(1) blur(0.4px)}
+    .duvarurun img:nth-child(2){width:88%;margin-left:8%}
+    .kat > *{position:relative;z-index:1}
+    @media (max-width:1000px){ .duvarurun{display:none} }
 
     .ust{display:flex;align-items:center;justify-content:space-between;flex:none}
     .ust img{display:block;height:38px;width:auto}
@@ -107,6 +115,10 @@
 </head>
 <body>
   <div class="mekan"></div>
+  <div class="duvarurun">
+    <img src="../assets/urun/on_ruzgarlik.png" alt="" />
+    <img src="../assets/urun/arka_ruzgarlik.png" alt="" />
+  </div>
   <div class="kat">
     <header class="ust">
       <img src="../assets/marka/ana.webp" alt="SUNPLEX" />
