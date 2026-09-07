@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>SUNPLEX | Fiat Egea — VR Stüdyo</title>
+  <title>SUNPLEX | Fiat Egea — Showroom</title>
   <style>
     :root {
       --navy-1: #0a1224;
@@ -50,7 +50,10 @@
       background: linear-gradient(180deg, rgba(10,18,36,0.85) 0%, rgba(10,18,36,0) 100%);
       pointer-events: none;
     }
-    #topbar .wordmark { display: flex; align-items: baseline; gap: 2px; }
+    #topbar .wordmark { display: flex; align-items: center; }
+    .wordmark img { display: block; height: 36px; width: auto; }
+    #loader .wordmark img { height: 68px; }
+
     #btn-araclar { pointer-events: auto; position: fixed; top: 64px; left: 26px; z-index: 21; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 1px; color: var(--chrome-2); border: 1px solid var(--line); border-radius: 10px; padding: 11px 14px; background: rgba(10,18,36,0.6); }
     #btn-araclar:hover { color: #fff; border-color: rgba(201,208,218,0.5); }
     #topbar .wordmark .sun, #topbar .wordmark .plex { font-size: 22px; }
@@ -116,34 +119,32 @@
       .dock-btn { padding: 9px 10px; font-size: 11px; }
     }
   </style>
-  <script type="module" crossorigin src="../assets/VRButton-BG_Ju1NU.js"></script>
-  <script type="module" crossorigin src="../assets/egea-ByNTsWPD.js"></script>
+  <script type="module" crossorigin src="../assets/VRButton-kooEDh_E.js"></script>
+  <script type="module" crossorigin src="../assets/egea-B0qbfQQe.js"></script>
 </head>
 <body>
   <div id="app"></div>
 
   <div id="loader">
     <div class="wordmark">
-      <span class="sun">SUN</span><span class="plex">PLEX</span>
-      <div class="sub">VR Stüdyo</div>
+      <img src="../assets/marka/ana.webp" alt="SUNPLEX" />
     </div>
     <div id="loader-bar"><div id="loader-fill"></div></div>
-    <div id="loader-status">Stüdyo hazırlanıyor</div>
+    <div id="loader-status">Preparing the studio</div>
   </div>
 
-  <a id="btn-araclar" href="../secim/">ARAÇLAR</a>
+  <a id="btn-araclar" href="../secim/">GARAGE</a>
   <header id="topbar">
     <div class="wordmark">
-      <span class="sun">SUN</span><span class="plex">PLEX</span>
+      <img src="../assets/marka/ana.webp" alt="SUNPLEX" />
     </div>
     <div class="model-tag">
       <strong>Fiat Egea</strong>
-      Cam Rüzgarlığı · Sanal Stüdyo
+      Wind Deflector · Showroom
     </div>
   </header>
 
-  <div id="station-label">Yan Profil</div>
-  <div id="hint">Sürükleyerek bakının · W A S D veya ok tuşları: aracın etrafında yürüyün · Boşluk: sonraki nokta</div>
+  <div id="hint">Drag to look around · W A S D or arrow keys: walk around the car</div>
 
 
 </body>
